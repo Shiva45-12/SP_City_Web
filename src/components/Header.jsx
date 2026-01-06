@@ -24,7 +24,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-30 bg-white shadow-md border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-3">
-        <div className="grid grid-cols-3 items-center">
+        {/* Desktop Layout */}
+        <div className="hidden md:grid md:grid-cols-3 items-center">
           {/* Left - Logo */}
           <div className="flex justify-start">
             <Link to="/" className="hover:scale-105 transition-transform duration-300">
@@ -33,7 +34,7 @@ const Header = () => {
           </div>
 
           {/* Center - Menu */}
-          <nav className="hidden md:flex gap-4 font-semibold justify-center whitespace-nowrap">
+          <nav className="flex gap-4 font-semibold justify-center whitespace-nowrap">
             {menuItems.map((item) => (
               <Link
                 key={item.path}
@@ -51,17 +52,22 @@ const Header = () => {
           </nav>
 
           {/* Right - Actions */}
-          <div className="flex justify-end items-center gap-4">
-            <div className="hidden md:flex">
-              <HeaderActions />
-            </div>
-            <button
-              onClick={() => setOpen(!open)}
-              className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-all duration-300"
-            >
-              {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
+          <div className="flex justify-end items-center">
+            <HeaderActions />
           </div>
+        </div>
+
+        {/* Mobile Layout */}
+        <div className="md:hidden flex items-center justify-between">
+          <Link to="/" className="hover:scale-105 transition-transform duration-300">
+            <img src="/Logo SVG.svg" alt="Logo" className="w-12 h-12 drop-shadow-lg" />
+          </Link>
+          <button
+            onClick={() => setOpen(!open)}
+            className="p-2 rounded-lg hover:bg-gray-100 transition-all duration-300"
+          >
+            {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
       </div>
 
