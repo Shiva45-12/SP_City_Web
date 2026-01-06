@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaShieldAlt, FaLock, FaUserShield, FaCheckCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 const PrivacyPolicy = () => {
   const [inView, setInView] = useState(false);
@@ -110,9 +112,13 @@ const PrivacyPolicy = () => {
             <p className="text-white/90 mb-6 text-lg">
               If you have any questions about this Privacy Policy, please contact us
             </p>
-            <a href="/contact" className="inline-block bg-white text-red-600 px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-transform duration-300">
-              Contact Us
-            </a>
+            <Link
+  to="/contact"
+  className="inline-block bg-white text-red-600 px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-transform duration-300"
+>
+  Contact Us
+</Link>
+
           </div>
         </div>
       </section>

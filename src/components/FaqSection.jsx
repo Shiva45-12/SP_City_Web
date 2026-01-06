@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaPlus, FaTimes, FaArrowRight, FaQuestionCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const faqs = [
   {
@@ -70,12 +71,12 @@ const FaqSection = () => {
             Can't find what you're looking for? Send us your enquiry and we'll get back to you promptly
           </p>
 
-          <button className="group flex items-center gap-4 bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105">
-            <span className="font-semibold"><a href="/contact">Get in Touch</a></span>
+          <Link to="/contact" className="group flex items-center gap-4 bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <span className="font-semibold">Get in Touch</span>
             <span className="bg-white text-red-600 p-2 rounded-full group-hover:translate-x-1 transition-transform duration-300">
               <FaArrowRight />
             </span>
-          </button>
+          </Link>
 
           {/* Stats */}
           <div className="mt-12 grid grid-cols-2 gap-6">

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaFileContract, FaGavel, FaHandshake, FaExclamationTriangle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const TermsOfService = () => {
   const [inView, setInView] = useState(false);
@@ -124,9 +125,9 @@ const TermsOfService = () => {
             <p className="text-white/90 mb-6 text-lg">
               If you have any questions about these Terms of Service, please contact us
             </p>
-            <a href="/contact" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-transform duration-300">
+            <Link to="/contact" className="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-transform duration-300">
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </section>
