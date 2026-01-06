@@ -1,6 +1,11 @@
 import Button from "./Button";
+import { useLanguage } from "../context/LanguageContext.jsx";
+import { translations } from "../utils/translations.js";
 
 const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <section
       className="relative min-h-screen flex items-center pb-16"
@@ -15,28 +20,21 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 text-white pt-32">
-        <div className="max-w-4xl">
-          <div className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-full text-sm font-medium mb-8 animate-pulse">
-            ✨ Discover Your Dream Home with Us
+      <div className="relative z-10 max-w-8xl mx-auto px-6 sm:px-8 text-white pt-32">
+        <div className="max-w-6xl">
+          <div className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-3 rounded-full text-base font-medium mb-10 animate-pulse shadow-lg">
+            ✨ {t.heroTitle}
           </div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black leading-tight mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up">
-            Find the Perfect <br />
-            <span className="text-red-400 animate-bounce inline-block">Property</span> for Your <br />
-            Lifestyle
+          <h1 className="text-4xl sm:text-7xl lg:text-8xl font-black leading-tight mb-10 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up">
+            {t.heroTitle.split(' ').slice(0, 3).join(' ')} <br />
+            <span className="text-red-400 animate-bounce inline-block">{language === 'hi' ? 'प्रॉपर्टी' : 'Property'}</span> {language === 'hi' ? 'खोजें' : 'for Your'} <br />
+            {language === 'hi' ? '' : 'Lifestyle'}
           </h1>
 
-          <p className="text-xl sm:text-2xl text-gray-200 mb-12 max-w-2xl leading-relaxed animate-fade-in-up animation-delay-300">
-            Explore thousands of premium properties with our expert guidance. 
-            Your dream home is just one click away.
+          <p className="text-2xl sm:text-3xl text-gray-200 mb-14 max-w-4xl leading-relaxed animate-fade-in-up animation-delay-300">
+            {t.heroSubtitle}
           </p>
-
-          <div className="animate-fade-in-up animation-delay-500">
-            <Button variant="primary" className="text-xl px-12 py-3 animate-pulse hover:animate-none relative z-20">
-               Start Searching
-            </Button>
-          </div>
         </div>
       </div>
     </section>

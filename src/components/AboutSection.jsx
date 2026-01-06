@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="bg-gradient-to-br from-gray-50 to-gray-100 py-20">
+    <section className="bg-gradient-to-br from-gray-50 to-gray-100 py-18">
       <div className="max-w-7xl mx-auto px-6">
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-12 md:p-16 shadow-2xl border border-white/20">
           <div className="grid md:grid-cols-2 gap-16 items-center">

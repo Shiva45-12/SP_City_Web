@@ -21,7 +21,7 @@ const ClientCentricSection = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="relative bg-gradient-to-br from-gray-50 via-white to-gray-100 py-24 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-gradient-to-br from-gray-50 via-white to-gray-100 py-20 overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-20 animate-pulse"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>

@@ -20,7 +20,7 @@ const OurStorySection = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="relative bg-gradient-to-b from-white to-gray-50 py-24 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-gradient-to-b from-white to-gray-50 py-20 overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-red-100 rounded-full blur-3xl opacity-30"></div>
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-30"></div>

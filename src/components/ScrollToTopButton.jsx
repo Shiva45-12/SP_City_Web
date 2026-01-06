@@ -37,8 +37,8 @@ const ScrollToTopButton = () => {
             <div className="absolute inset-0 bg-red-500 rounded-full animate-ping opacity-75"></div>
             
             {/* Button */}
-            <div className="relative w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 cursor-pointer">
-              <FaArrowUp className="text-white text-2xl" />
+            <div className="relative w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 cursor-pointer">
+              <FaArrowUp className="text-white text-xl" />
             </div>
 
             {/* Tooltip */}

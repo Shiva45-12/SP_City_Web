@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactSection from "../components/ContactSection";
+import FollowUs from "../components/FollowUs";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane } from "react-icons/fa";
 
 const Contact = () => {
@@ -87,6 +88,8 @@ const Contact = () => {
       </section>
 
       <ContactSection />
+
+      <FollowUs />
 
       {/* Map Section */}
       <section className="relative py-16 bg-gradient-to-b from-white to-gray-50 overflow-hidden">

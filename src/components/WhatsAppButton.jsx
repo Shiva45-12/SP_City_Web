@@ -2,7 +2,7 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "918112580707"; // Format: country code + number without + or spaces
+  const phoneNumber = "918112580707";
   const message = "Hello! I'm interested in your properties.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
@@ -11,7 +11,7 @@ const WhatsAppButton = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 left-6 z-50 group"
+      className="fixed bottom-28 left-6 z-50 group"
       aria-label="Chat on WhatsApp"
     >
       <div className="relative">
@@ -19,8 +19,8 @@ const WhatsAppButton = () => {
         <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-75"></div>
         
         {/* Button */}
-        <div className="relative w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 cursor-pointer">
-          <FaWhatsapp className="text-white text-3xl" />
+        <div className="relative w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 cursor-pointer">
+          <FaWhatsapp className="text-white text-2xl" />
         </div>
 
         {/* Tooltip */}
