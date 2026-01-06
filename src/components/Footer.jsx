@@ -27,9 +27,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-white text-gray-900 border-t border-gray-200">
+    <footer className="bg-white text-gray-900 border-t border-gray-200 mt-20">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         
         {/* Logo & Description */}
         <div className="animate-fade-in-up">
@@ -148,7 +148,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           
           <p className="text-gray-600 text-sm">
             {t.copyright} || {t.designedBy} <a href="https://digicoders.in/" className="text-red-500 font-semibold hover:underline"> Team Digicoders</a>

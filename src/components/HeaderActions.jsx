@@ -113,23 +113,14 @@ const HeaderActions = () => {
                   value={searchInput}
                   onChange={(e) => setSearchInput(e.target.value)}
                   placeholder={t.searchPlaceholder}
-                  className="w-full pl-12 pr-4 py-4 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-red-500 focus:ring-2 focus:ring-red-100 transition-all duration-300 text-gray-900"
+                  className="w-full pl-12 pr-28 py-4 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-red-500 focus:ring-2 focus:ring-red-100 transition-all duration-300 text-gray-900"
                   autoFocus
                 />
-              </div>
-              <div className="mt-6 flex gap-3">
                 <button
                   type="submit"
-                  className="flex-1 bg-gradient-to-r from-red-600 to-red-700 text-white py-3 rounded-xl font-semibold hover:scale-105 transition-transform duration-300 shadow-lg"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-2.5 rounded-lg font-semibold hover:scale-105 transition-transform duration-300 shadow-lg"
                 >
                   {t.searchNow}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setShowSearch(false)}
-                  className="px-6 py-3 border border-gray-300 rounded-xl font-semibold text-gray-700 hover:bg-gray-100 transition-all duration-300"
-                >
-                  {t.cancel}
                 </button>
               </div>
             </form>
