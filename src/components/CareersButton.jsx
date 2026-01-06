@@ -1,7 +1,7 @@
 const CareersButton = ({ label = "Careers", onClick }) => {
   return (
     <button
-      onClick={onClick}
+onClick={onClick}
       className="
         px-8 py-2
         rounded-xl
