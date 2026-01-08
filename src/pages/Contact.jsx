@@ -130,30 +130,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="grid md:grid-cols-3 gap-8 p-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 text-2xl mx-auto mb-4">
-                  <FaMapMarkerAlt />
-                </div>
-                <h3 className="font-bold text-gray-900 mb-2">Address</h3>
-                <p className="text-gray-600">123 SP City, Prayagraj, Uttar Pradesh</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mx-auto mb-4">
-                  <FaClock />
-                </div>
-                <h3 className="font-bold text-gray-900 mb-2">Office Hours</h3>
-                <p className="text-gray-600">Monday - Saturday<br />9:00 AM - 6:00 PM</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center text-green-600 text-2xl mx-auto mb-4">
-                  <FaPhone />
-                </div>
-                <h3 className="font-bold text-gray-900 mb-2">Contact</h3>
-                <p className="text-gray-600">+91 98765 43210<br />contact@spcity.com</p>
-              </div>
-            </div>
+      
           </div>
         </div>
       </section>

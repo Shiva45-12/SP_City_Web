@@ -22,11 +22,8 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-8xl mx-auto px-6 sm:px-8 text-white pt-32">
         <div className="max-w-6xl">
-          {/* <div className="inline-block bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-3 rounded-full text-base font-medium mb-10 animate-pulse shadow-lg">
-            ✨ {t.heroTitle}
-          </div> */}
 
-          <h1 className="text-4xl sm:text-7xl lg:text-8xl font-black leading-tight mb-10 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-10 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up">
             {t.heroTitle.split(' ').slice(0, 3).join(' ')} <br />
             <span className="text-red-400 animate-bounce inline-block">{language === 'hi' ? 'प्रॉपर्टी' : 'Property'}</span> {language === 'hi' ? 'खोजें' : 'for Your'} <br />
             {language === 'hi' ? '' : 'Lifestyle'}

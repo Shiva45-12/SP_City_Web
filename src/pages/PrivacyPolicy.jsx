@@ -76,7 +76,7 @@ const PrivacyPolicy = () => {
             inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h2>
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <p className="text-gray-600 leading-relaxed text-lg text-justify">
               At SP-City, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
             </p>
           </div>
@@ -97,7 +97,7 @@ const PrivacyPolicy = () => {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-4">{section.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{section.content}</p>
+                    <p className="text-gray-600 leading-relaxed text-justify">{section.content}</p>
                   </div>
                 </div>
               </div>

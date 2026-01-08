@@ -157,54 +157,6 @@ const Gallery = () => {
         </div>
       )}
 
-      {/* Stats Section */}
-      <section className="relative bg-gradient-to-r from-red-600 to-red-700 py-16 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-        </div>
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-white mb-2">500+</div>
-              <div className="text-white/90 text-sm md:text-base">Properties Sold</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-white mb-2">15+</div>
-              <div className="text-white/90 text-sm md:text-base">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-white mb-2">98%</div>
-              <div className="text-white/90 text-sm md:text-base">Client Satisfaction</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-black text-white mb-2">50+</div>
-              <div className="text-white/90 text-sm md:text-base">Awards Won</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 to-black py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-red-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
-        </div>
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 bg-red-600 text-white px-5 py-2 rounded-full text-sm font-semibold mb-6">
-            <span>✓</span> Ready to Find Your Dream Property?
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Let's Make Your <span className="text-red-400">Dream</span> Come True
-          </h2>
-          <p className="text-gray-300 text-lg mb-8">
-            Contact us today and let our expert team help you find the perfect property that matches your vision and budget
-          </p>
-         
-        </div>
-      </section>
-
       <AppointmentSection />
       <Footer />
     </>

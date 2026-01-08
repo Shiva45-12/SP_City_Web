@@ -23,38 +23,26 @@ const Footer = () => {
     { name: t.aboutUs, path: "/about" },
     { name: t.ourProjects, path: "/project" },
     { name: t.ourGallery, path: "/gallery" },
-    { name: t.contactUs, path: "/contact" }
+    { name: t.contactUs, path: "/contact" },
   ];
 
   return (
     <footer className="bg-white text-gray-900 border-t border-gray-200 mt-20">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-        
         {/* Logo & Description */}
         <div className="animate-fade-in-up">
           <div className="flex items-center gap-3 text-2xl font-bold mb-6">
             <Link to="/" className="group">
-              <img 
-                src="/Logo SVG.svg" 
-                alt="Logo" 
-                className="w-16 h-16 transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-12 group-hover:drop-shadow-2xl" 
+              <img
+                src="/Logo SVG.svg"
+                alt="Logo"
+                className="w-16 h-16 transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-12 group-hover:drop-shadow-2xl"
               />
             </Link>
             {/* <span className="bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">SP-City</span> */}
           </div>
-          <p className="leading-relaxed text-gray-600 mb-6">
-            {t.footerDesc}
-          </p>
-          <div className="flex gap-4">
-            <div className="bg-red-600 rounded-lg p-3">
-              <span className="text-white font-bold text-sm">500+</span>
-            </div>
-            <div>
-              <div className="text-gray-900 font-semibold">{t.happyClients}</div>
-              <div className="text-gray-600 text-sm">{t.satisfiedCustomers}</div>
-            </div>
-          </div>
+          <p className="leading-relaxed text-gray-600 mb-6">{t.footerDesc}</p>
         </div>
 
         {/* Quick Links */}
@@ -66,7 +54,10 @@ const Footer = () => {
           <ul className="space-y-3">
             {menuItems.map((item) => (
               <li key={item.name}>
-                <Link to={item.path} className="text-gray-600 hover:text-red-600 transition-colors duration-300 flex items-center gap-2 group">
+                <Link
+                  to={item.path}
+                  className="text-gray-600 hover:text-red-600 transition-colors duration-300 flex items-center gap-2 group"
+                >
                   <span className="w-2 h-2 bg-red-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   {item.name}
                 </Link>
@@ -88,7 +79,9 @@ const Footer = () => {
               </div>
               <div>
                 <div className="text-gray-900 font-medium">{t.address}</div>
-                <div className="text-gray-600 text-sm">123 SP City, Prayagraj Uttar Pradesh</div>
+                <div className="text-gray-600 text-sm">
+                  123 SP City, Prayagraj Uttar Pradesh
+                </div>
               </div>
             </li>
             <li className="flex items-start gap-3 group">
@@ -118,9 +111,7 @@ const Footer = () => {
             {t.newsletter}
             <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-red-600"></span>
           </h3>
-          <p className="mb-6 text-gray-600">
-            {t.newsletterDesc}
-          </p>
+          <p className="mb-6 text-gray-600">{t.newsletterDesc}</p>
 
           <div className="space-y-4">
             <div className="flex gap-2">
@@ -133,14 +124,19 @@ const Footer = () => {
                 <FaSearch />
               </button>
             </div>
-            
+
             {/* Social Icons */}
             <div className="flex gap-3 pt-4">
-              {[FaTwitter, FaPinterestP, FaYoutube, FaInstagram].map((Icon, index) => (
-                <div key={index} className="w-10 h-10 bg-gray-100 hover:bg-red-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer group">
-                  <Icon className="text-gray-600 group-hover:text-white" />
-                </div>
-              ))}
+              {[FaTwitter, FaPinterestP, FaYoutube, FaInstagram].map(
+                (Icon, index) => (
+                  <div
+                    key={index}
+                    className="w-10 h-10 bg-gray-100 hover:bg-red-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 cursor-pointer group"
+                  >
+                    <Icon className="text-gray-600 group-hover:text-white" />
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>
@@ -149,14 +145,30 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          
           <p className="text-gray-600 text-sm">
-            {t.copyright} || {t.designedBy} <a href="https://digicoders.in/" className="text-red-500 font-semibold hover:underline"> Team Digicoders</a>
+            {t.copyright} || {t.designedBy}{" "}
+            <a
+              href="https://digicoders.in/"
+              className="text-red-500 font-semibold hover:underline"
+            >
+              {" "}
+              Team Digicoders
+            </a>
           </p>
 
           <div className="flex items-center gap-6">
-            <Link to="/privacy-policy" className="text-gray-600 hover:text-red-600 text-sm transition-colors duration-300">{t.privacyPolicy}</Link>
-            <Link to="/terms-of-service" className="text-gray-600 hover:text-red-600 text-sm transition-colors duration-300">{t.termsOfService}</Link>
+            <Link
+              to="/privacy-policy"
+              className="text-gray-600 hover:text-red-600 text-sm transition-colors duration-300"
+            >
+              {t.privacyPolicy}
+            </Link>
+            <Link
+              to="/terms-of-service"
+              className="text-gray-600 hover:text-red-600 text-sm transition-colors duration-300"
+            >
+              {t.termsOfService}
+            </Link>
           </div>
         </div>
       </div>

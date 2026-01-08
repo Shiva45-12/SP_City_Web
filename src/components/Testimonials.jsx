@@ -5,16 +5,12 @@ const testimonials = [
     id: 1,
     name: "RAJESH KUMAR",
     text: "SP-City helped me find my dream home in the heart of the city. Their professional team guided me through every step, making the entire process smooth and hassle-free. Highly recommended!",
-    rating: 5,
-    location: "Mumbai",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
   },
   {
     id: 3,
     name: "AMIT PATEL",
     text: "Outstanding experience with SP-City! Their market knowledge and negotiation skills saved me both time and money. I couldn't be happier with my new property investment.",
-    rating: 5,
-    location: "Bangalore",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
   },
 ];
@@ -32,7 +28,6 @@ const Testimonials = () => {
             {/* LEFT CONTENT */}
             <div className="animate-fade-in-up">
               <span className="text-red-600 text-6xl font-bold leading-none animate-pulse">
-                "
               </span>
 
               <h2 className="mt-6 text-4xl sm:text-5xl font-black text-gray-900 leading-tight">
@@ -51,9 +46,7 @@ const Testimonials = () => {
                 helping you find the perfect place to call home.
               </p>
 
-              <Link to="/testimonials" className="mt-10 inline-block px-10 py-4 rounded-xl bg-gradient-to-r from-red-600 to-red-700 text-white font-bold hover:from-red-700 hover:to-red-800 transition-all duration-300 hover:scale-105 shadow-lg">
-                MORE TESTIMONIALS
-              </Link>
+             
             </div>
 
             {/* RIGHT TESTIMONIALS */}
@@ -65,7 +58,7 @@ const Testimonials = () => {
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   {/* Header */}
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="flex items-center gap-4 mb-3">
                     <img 
                       src={item.avatar} 
                       alt={item.name}
@@ -75,23 +68,14 @@ const Testimonials = () => {
                       <p className="font-bold text-gray-900 group-hover:text-red-600 transition-colors duration-300">
                         {item.name}
                       </p>
-                      <p className="text-sm text-gray-500">{item.location}</p>
                     </div>
                   </div>
-
-                  {/* Stars */}
-                  <div className="flex gap-1 text-yellow-400 mb-4">
-                    {Array.from({ length: item.rating }).map((_, i) => (
-                      <span key={i} className="text-lg animate-pulse" style={{ animationDelay: `${i * 0.1}s` }}>★</span>
-                    ))}
-                  </div>
-
+                  
                   {/* Text */}
                   <p className="text-gray-700 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">
                     "{item.text}"
                   </p>
-
-                  <div className="mt-4 w-0 h-0.5 bg-red-600 group-hover:w-full transition-all duration-500"></div>
+                  <div className="mt-2 w-0 h-0.5 bg-red-600 group-hover:w-full transition-all duration-500"></div>
                 </div>
               ))}
             </div>
